@@ -32,10 +32,12 @@ class NormalText extends StatelessWidget {
     Key? key,
     this.color = Colors.grey,
     required this.text,
+    this.fontWeight,
   }) : super(key: key);
 
   final String text;
   final Color color;
+  final FontWeight? fontWeight;
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +45,32 @@ class NormalText extends StatelessWidget {
       text,
       style: TextStyle(
         color: color,
+        fontWeight: fontWeight,
       ),
+    );
+  }
+}
+
+class MediumText extends StatelessWidget {
+  const MediumText({
+    Key? key,
+    required this.text,
+    this.fontSize = 18,
+    this.fontWeight = FontWeight.bold,
+    this.color,
+  }) : super(key: key);
+
+  final String text;
+  final double? fontSize;
+  final FontWeight fontWeight;
+  final Color? color;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      style:
+          TextStyle(fontWeight: fontWeight, fontSize: fontSize, color: color),
     );
   }
 }

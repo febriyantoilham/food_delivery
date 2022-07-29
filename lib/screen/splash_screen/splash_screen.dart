@@ -1,9 +1,11 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:food_delivery/route.dart';
 import 'package:food_delivery/utilities/color.dart';
 import 'package:food_delivery/utilities/dimension.dart';
 import 'package:food_delivery/widget/button.dart';
 import 'package:food_delivery/widget/text.dart';
+import 'package:get/get.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -70,8 +72,11 @@ class SplashScreen extends StatelessWidget {
                     ),
                   ),
                   SquareButton(
-                    onTap: () {},
+                    onTap: () {
+                      Get.offNamed(RouteHelper.getNavbar());
+                    },
                     text: "Get Started",
+                    width: double.maxFinite,
                   )
                 ],
               ))

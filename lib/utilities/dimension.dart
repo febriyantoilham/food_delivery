@@ -10,6 +10,7 @@ class Dimension {
   static double height10 = screenHeight / (screenHeight / 10);
   static double height15 = screenHeight / (screenHeight / 15);
   static double height20 = screenHeight / (screenHeight / 20);
+  static double height25 = screenHeight / (screenHeight / 25);
   static double height30 = screenHeight / (screenHeight / 30);
   static double height40 = screenHeight / (screenHeight / 40);
   static double height50 = screenHeight / (screenHeight / 50);
@@ -27,6 +28,7 @@ class Dimension {
   static double widthx = screenWidth / (screenWidth / customWidth);
 
   //Radius
+  static double radius5 = 5;
   static double radius10 = 10;
 
   // Font Size
