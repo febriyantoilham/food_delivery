@@ -24,9 +24,6 @@ class Dimension {
   static double width40 = screenWidth / (screenWidth / 40);
   static double width50 = screenWidth / (screenWidth / 50);
 
-  static double customWidth = 10;
-  static double widthx = screenWidth / (screenWidth / customWidth);
-
   //Radius
   static double radius5 = 5;
   static double radius10 = 10;

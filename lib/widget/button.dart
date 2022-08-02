@@ -87,10 +87,12 @@ class CircleIconButton extends StatelessWidget {
     Key? key,
     required this.icon,
     this.onTap,
+    this.size = 25,
   }) : super(key: key);
 
   final IconData icon;
   final VoidCallback? onTap;
+  final double? size;
 
   @override
   Widget build(BuildContext context) {
@@ -111,7 +113,7 @@ class CircleIconButton extends StatelessWidget {
         ),
         child: Icon(
           icon,
-          size: Dimension.height25,
+          size: size,
         ),
       ),
     );
